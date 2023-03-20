@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    background-color: #71717171;
+}
+
+.player {
+    width: 370px;
+    margin: 0 auto;
+}
+.timeline {
+    display: flex;
+   
+}
+
+
+.timeline__chunk {
+    background-color: grey;
+    height: 5px;
+    border-radius: 10%;
+    width: 100%;
+}
+
+.timeline__chunk + .timeline__chunk {
+margin-left:2px; 
+}
+.timeline__chunk-inner{
+    width:0;
+    height: inherit;
+    background-color: white;
+    border-radius: inherit;
+}
+
+
+.player__content{
+    position: relative;
+}
+
+.player__content img {
+    width: 100%;
+}
+
+.player__content-chunk{
+    display: none;
+}
+
+.player__content-chunk_active {
+display: block;
+}
+
+.player__content-switcher {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: red;
+}
+.player__content-switcher-prev{
+    top:0;
+    left:0
+
+}
+.player__content-switcher-next{
+    top:0;
+    right:0
+
+}
